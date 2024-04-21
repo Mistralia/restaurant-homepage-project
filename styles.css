@@ -1,0 +1,457 @@
+.body {
+    background-color: #E1BB80;
+    overflow-x: hidden;
+}
+
+
+/* Navbar */
+.navbar {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: #2F2224;
+    color: wheat;
+}
+
+.header {
+    background-color: #2F2224;
+}
+
+.nav-link,
+.nav-link:focus {
+    color: #fdecbe;
+}
+
+.navbar-brand,
+.navbar-brand:focus {
+    color: rgb(232, 173, 90);
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #e2cba9;
+}
+
+
+
+/* Menu */
+#myTab .nav-link {
+    color: #9f6e03;
+    border-color: #6f480044;
+}
+
+#myTab .nav-link.active {
+    color: #9f6e03;
+    background-color: #d07d01bf;
+    border-color: #6f4800;
+    color: #6f4800;
+    font-weight: 700;
+    border-bottom: 2px solid #6f4800;
+}
+
+#myTab {
+    border-bottom: 1px solid #b37501;
+}
+
+#myTab .nav-link:hover {
+    color: #9f6e03;
+    background-color: #d07d0176;
+    border-color: #6f480044;
+    color: #6f4800;
+    border-bottom: 2px solid #6f48004b;
+}
+
+/* Menu Container */
+.row.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.col.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.col.text-center .btn {
+    margin-top: auto;
+}
+
+
+.col.text-center p {
+    font-size: 13px;
+}
+
+.col.text-center .price,
+.col.text-center .drink-price,
+.col.text-center .set-price {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+
+.meal-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Override Main Page Carousel */
+.container-fluid {
+    overflow-x: hidden;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+.carousel-text {
+    background-color: #2f22249f;
+    color: #fdecbe;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+
+
+.row.experience-row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.experience {
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    background-color: #FFE1A8;
+}
+
+
+
+
+/* Buttons */
+
+.btn {
+    font-weight: 700;
+    color: #2F2224;
+    background-color: #ddad63;
+    border: 2px solid #6f4800;
+    transition: opacity 0.8s ease;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    color: #2F2224;
+    background-color: #ddad63;
+    border: 2px solid rgb(111, 72, 0);
+    opacity: .5;
+}
+
+
+.btn:active {
+    color: #2F2224;
+    background-color: #ddad63;
+    border: 2px solid rgb(111, 72, 0);
+    opacity: .2;
+    transform: translateY(1px);
+}
+
+
+.btn:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
+/* Reservation Process Page */
+
+.reservation-card,
+.card,
+.contacts {
+    background-color: wheat;
+    border-radius: 2rem;
+}
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content {
+    background-color: wheat;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+}
+
+@media (max-width: 576px) {
+    .modal-content {
+        margin: 50% auto;
+    }
+}
+
+.close {
+    color: rgb(111, 72, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(148, 111, 42);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Cart Style */
+.cart-button {
+    min-width: 75px;
+    /* max-height: 44px; */
+    position: relative;
+}
+
+@media (max-width: 1100px) {
+    .cart-button {
+        min-width: 50px;
+        max-height: 44px;
+        font-size: 13px;
+    }
+
+    .cart-button sup {
+        font-size: 10px;
+    }
+
+    .cart-icon {
+        width: 12px;
+    }
+
+    .navbar-toggler {
+        min-width: 50px;
+        max-height: 44px;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px;
+    }
+}
+
+
+
+#offcanvasWithBothOptions {
+    width: 35%;
+    background-color: #eacc9f;
+    color: #2F2224;
+}
+
+#basket-items li {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.cart-summary li {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.cart-item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.cart-item-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-item-price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.toggle-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-cost {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-danger,
+.btn-success,
+.btn-danger:hover,
+.btn-success:hover,
+.btn.btn-danger.decrease-quantity-btn:active,
+.btn.btn-success.increase-quantity-btn:active,
+.btn.btn-danger.decrease-quantity-btn:focus,
+.btn.btn-success.increase-quantity-btn:focus {
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+}
+
+.quantity-buttons {
+    background-color: wheat;
+    border-radius: 2rem;
+    border-color: #ab8e6b;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.5rem;
+}
+
+.btn.btn-secondary.remove-btn,
+.btn.btn-secondary.remove-btn:hover,
+.btn.btn-secondary.remove-btn:active,
+.btn.btn-secondary.remove-btn:focus {
+    background-color: wheat;
+    border-radius: 2rem;
+    border-color: #ab8e6b;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.5rem;
+}
+
+
+@media (min-width: 576px) {
+    #offcanvasWithBothOptions {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    #offcanvasWithBothOptions {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    #offcanvasWithBothOptions {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #offcanvasWithBothOptions {
+        width: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    #offcanvasWithBothOptions {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Confirm order page */
+.card.confirm-order {
+    background-color: #eacc9f;
+    border-radius: 2rem;
+    padding: 0rem;
+}
+
+@media (min-width: 576px) {
+    .card.confirm-order {
+        width: 100%;
+        margin: auto;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .card.confirm-order {
+        width: 70%;
+        margin: auto;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .card.confirm-order {
+        width: 50%;
+        margin: auto;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card.confirm-order {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+
+/* Reservation Form */
+
+.reservation-form-container,
+.check-reservation-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: wheat;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+
+/* Contacts */
+.map h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+gmp-map {
+    height: 300px;
+
+}
+
+/* Footer */
+.footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/footer background/wepik-export-20240229111911z47T.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #d7c8a1;
+    width: 100%;
+}
