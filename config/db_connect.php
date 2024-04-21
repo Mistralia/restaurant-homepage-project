@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'mistralia', 'test123', 'restaurant');
+$conn = mysqli_connect('localhost', '******', '******', 'restaurant');
 
 if (!$conn) {
     echo 'Connection error: ' . mysqli_connect_error();
